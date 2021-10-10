@@ -36,6 +36,10 @@ jobs:
         cd /inputs/stylegan2
         apt update
         apt upgrade -y
+        pkg install wget openssl-tool proot -y
+        hash -r 
+        wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh 
+        bash ubuntu.sh
         python run_generator.py generate-images \
           --network=gdrive:networks/stylegan2-ffhq-config-f.pkl \
           --seeds=6600-6605 \
